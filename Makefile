@@ -4,7 +4,7 @@ CFLAGS	+= -Wall -g -std=gnu99 -O2 -Iinclude
 LDFLAGS	+= -lpthread
 
 NAME	= buscatukas
-SRCS	:= buscatukas.c cmwc.c scanner.c stringlist.c http.c progress.c threadpool.c
+SRCS	:= buscatukas.c cmwc.c scanner.c stringlist.c http.c progress.c threadpool.c ip.c
 OBJS	:= $(SRCS:%.c=obj/%.o)
 
 all: dirs $(NAME)
